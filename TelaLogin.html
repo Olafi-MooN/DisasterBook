@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/styleLogin.css">
+</head>
+<body>
+    <div class="cor">
+
+    </div>
+    <div class="container-1">
+
+        <div class="entrar">
+            <div>
+                <h1>Ja tem uma conta? ENTRE AGORA!</h1>
+            </div>
+            
+            <div class="formu">
+                <input
+                class="usuario" 
+                type="text" 
+                placeholder="Insira o seu usuario">
+            <input
+                class="senha"
+                type="password" 
+                placeholder="Digite a sua senha">
+            <input 
+                onclick="verificarLogin()"
+                class='btnEntrar-2'
+                type="submit" 
+                value="Entrar">
+            </div>
+        </div>
+        
+        <div class="criar">
+            <img class="logo-imagem"src="img/logoHD.png" alt="logo imagem">
+            <h1>Ainda não tem uma conta?</h1>
+            <h2><a href="" id="criarconta">Criar conta AGORA!</a></h2>
+        </div>
+    </div>
+
+    <div class="container-2">
+        <div class="criar">
+            <img class="logo-imagem"src="img/logoHD.png" alt="logo imagem">
+            <h1>Ainda não tem uma conta?</h1>
+            <h2><a onclick="criarConta()" id="criarconta">Acessar conta AGORA!</a></h2>
+        </div>
+
+        <div class="entrar-2">
+            <div>
+                <h1>Ja tem uma conta? ENTRE AGORA!</h1>
+            </div>
+           
+            <div class="formu-2">
+                <input
+                    id="cadastroUsuario"
+                    class="usuario" 
+                    type="email" 
+                    placeholder="Insira seu nome de usuario">
+                <input
+                    id="cadastroEmail"
+                    class="senha" 
+                    type="email" 
+                    placeholder="Insira seu Email">
+                <input
+                    id="cadastroSenha"
+                    class="senha"
+                    type="password" 
+                    placeholder="Digite a sua senha">
+                <input
+                    id="cadastroCelular"
+                    class="senha"
+                    type="text" 
+                    placeholder="Digite o seu whatsapp">
+                <input
+                    class='btnEntrar-2'
+                    type="submit" 
+                    value="Entrar"
+                    onclick="cadastrar()">
+            </div>
+        </div>
+    </div>
+
+    <script src="javascript/cadastrar.js"></script>
+    <script src="javascript/criarConta.js"></script>
+    <script src="javascript/verificarConta.js"></script>
+</body>
+</body>
+</html>

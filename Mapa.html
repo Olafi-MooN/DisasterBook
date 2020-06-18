@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/modalDoa.css">
+    <link rel="stylesheet" href="styles/mapa.css">
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <div class="menuInicio">
+                <img src="img/logoHD.png" alt="">
+            </div>
+            <div class="menuMeio">
+                <input type="text" name="pesquisa" id="pesquisa" placeholder="Oque esta acontecendo no mundo?">
+                <button><i class="fas fa-search"></i></button>
+                <i class="doar fas fa-globe-americas"></i>
+            </div>
+            <div class="menuFim">
+                <i class="fas fa-comment-dots"></i>
+                <i class="fas fa-cogs"></i>
+                <div id="userL">
+                    <p id="userP">Nome Usuario</p>
+                </div>
+                <div class="fotoImgMenu">
+                    <img src="img/Anavitoria.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dividir">
+        <div id="mapContainer"></div>
+        <div id="areaPesquisa">
+            <div class="fechar">
+                <h2>Adicionar pontos</h2>
+                <h1>X</h1>
+            </div>
+            <div class="mapaPesquisa">
+                <p>Pais</p>
+                <input type="text" id="pais">
+            </div>
+            <div class="mapaPesquisa">
+                <p>Estado</p>
+                <input type="text" id="estado">
+            </div>
+            <div class="mapaPesquisa">
+                <p>Municipio</p>
+                <input type="text" id='municipio'>
+            </div>
+            <div class="mapaPesquisa">
+                <p>Bairro</p>
+                <input type="text" id='bairro'>
+            </div>
+            <div class="mapaPesquisa">
+                <p>Rua</p>
+                <input type="text" id='rua'>
+            </div>
+
+            <button class='btnEnviarDados'>Adicionar Ponto</button>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/2513f7c8fe.js" crossorigin="anonymous"></script>
+    <script src="Api/hereMap.js"></script>
+</body>
+</html>

@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Raleway:wght@200&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    width: 100%;
+    background-color: #ddd;
+}
+
+.menu {
+    background-color: white;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    height: 10vh;
+    width: 100%;
+    color: white;
+}
+
+.menuInicio {
+    margin-left: 30px;
+    width: 18%;
+    height: 9vh;
+}
+
+.menuInicio img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.menuInicio h1{
+    margin-left: 50px;
+}
+
+.menuMeio {
+    display: flex;
+    width: 60%;
+}
+
+#pesquisa{
+    margin-left: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    border: 2px solid #0070b9;
+    width: 50%;
+    outline:none;
+    text-align: center;
+}
+
+.menuMeio button {
+    width: 40px;
+    height: 30px;
+    border: none;
+    background-color: #0070b9;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    cursor: pointer;
+}
+.menuMeio .doar {
+    margin-left: 20px;
+    font-size: 22pt;
+    color: #22a9df;
+}
+
+.menuFim {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 30%;
+    font-size: 22pt;
+    color: #22a9df;
+    height: 100%;
+}
+
+#userL {
+    font-size: 15pt;
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#userL p{
+    width: 100%;
+    text-align: right;
+}
+
+.fotoImgMenu {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.fotoImgMenu img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.containerPostCont {
+    display: flex;
+    height: 12vh;
+    width: 57%;
+    flex-direction: column;
+}
+
+.adicionarAlerta{
+    font-family: 'Merriweather', serif;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.adicionarAlerta h1{
+    font-family: 'Merriweather', serif;
+    color: white;
+}
+
+.tipoArq {
+    display: flex;
+    background-color: #0070b9;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.tipoArq i {
+   border: 2px solid white;
+   border-radius: 20%;
+   padding: 10px;
+   margin-right: 5%;
+   cursor: pointer;
+}
+
+.postarConteudo {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 40px;
+    border-radius: 10px;
+    display: flex;  
+    align-items: center;
+    flex-direction: column;
+}
+
+.escreverConteudo {
+    display: flex;
+    height: 10vh;
+    width: 57%;
+    margin-left: 40px;
+}
+
+.coment{
+    width: 80%;
+    height: 100%;
+}
+
+.coment textarea {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    display: flex;
+    padding-top: 23px;
+    padding-left: 20px;
+}
+
+.compartilharCont{
+    width: 20%;
+    height: 100%;
+}
+
+.compartilharCont button {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: none;
+    color: #0070b9;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.compartilharCont button:hover {
+    background-color: rgba(255, 255, 255, 0.198);
+    border: 1px solid white;
+    font-size: 25px;
+}
+.algumaCoisa {
+    position: absolute;
+    background-color: #ffffffad;
+    height: 280px;
+    width: 30%;
+    margin-left: 65%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.topo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 25%;
+    background-color: white;
+}
+
+.topo h3 {
+    color: #0070b9;
+}
+
+.attDados {
+    display: flex;
+    height: 75%;
+    width: 100%;
+    flex-direction: column;
+}
+
+.dados {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.dados p {
+    width: 30%;
+    text-align: end;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-right: 20px;
+}
+
+.dados input {
+    background-color: rgba(255, 255, 255, 0.198);
+    border: 2px solid #ddd;
+    height: 26px;
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.adsenses{
+    position: fixed;
+    background-color: black;
+    height: 280px;
+    width: 30%;
+    margin-left: 65%;
+    margin-top: 320px;
+    border-radius: 10px;
+}
+
+.postagens {
+    background-color: rgb(255, 255, 255);
+    height: 10%;
+    width: 57%;
+    margin-left: 40px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.fotoPerfil{
+    background-color: #0070b9;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+}
+
+.fotoImg {
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: 30px;
+}
+
+.fotoImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.nomePessoa h3 {
+    margin-left: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.comentarioPost {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    width: 95%;
+    height: 40vh;
+    text-align: center;
+}
+
+.comentarioPost p {
+    font-family: 'Merriweather', serif;
+    font-size: 20pt;
+    color: black;
+}
+
+.acoes {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.acoes i{
+    margin-right: 5px;
+    font-size: 18pt;
+    cursor: pointer;
+    color: #0070b9;
+}
+.itemPost {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: 50%;
+}
+
+#curtir {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: 50%;
+}
+
+.itemPost p, .itemPost i, #curtir p, #curtir i {
+    pointer-events: none;
+    padding: 5px;
+}
+
+.itemPost p, #curtir p {
+    margin-right: 20px;
+}
+
+.final {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.nova {
+    display: none;
+}
